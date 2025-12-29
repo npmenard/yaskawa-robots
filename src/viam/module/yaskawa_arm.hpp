@@ -87,6 +87,10 @@ class YaskawaArm final : public Arm, public Reconfigurable {
         throw std::runtime_error("unimplemented");
     }
 
+    std::map<std::string, mesh> get_3d_models(const ProtoStruct&) override {
+        throw std::runtime_error("unimplemented");
+    }
+
    private:
     void configure_(const Dependencies& deps, const ResourceConfig& config);
 
